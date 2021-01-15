@@ -1,38 +1,116 @@
 .App {
-  text-align: center;
+	text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
-  pointer-events: none;
+	height: 40vmin;
+	pointer-events: none;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+	.App-logo {
+		animation: App-logo-spin infinite 20s linear;
+	}
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+	background-color: #282c34;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-size: calc(10px + 2vmin);
+	color: white;
 }
 
 .App-link {
-  color: #61dafb;
+	color: #61dafb;
+}
+
+.each-todo {
+	background-color: whitesmoke;
+	color: #3f3f3f;
+	width: 400px;
+	height: 60px;
+	align-items: center;
+	justify-content: flex-start;
+	display: flex;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 15px;
+	padding-left: 25px;
+	font-weight: bold;
+	transition: all linear 0.2s;
+}
+
+.each-todo.completed {
+	background-color: tomato;
+	color: white;
+}
+
+.new-todo-container {
+	display: flex;
+	flex-direction: column;
+}
+.completed-text {
+	font-size: 10px;
+	margin-left: auto;
+	margin-right: 10px;
+}
+
+.new-todo-container > input,
+.new-todo-container > button {
+	width: 400px;
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+}
+
+.new-todo-container > input {
+	height: 50px;
+	margin-bottom: 10px;
+	outline: none;
+	padding-left: 25px;
+	background-color: teal;
+	color: whitesmoke;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.new-todo-container > button {
+	width: 425px;
+	height: 45px;
+	background-color: seagreen;
+	color: whitesmoke;
+	font-size: 20px;
+	font-weight: bold;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.new-todo-container {
+	border: 4px solid saddlebrown;
+	margin-top: 20px;
+	padding: 20px;
+}
+
+.delete-icon {
+	height: 24px;
+	cursor: pointer;
+}
+
+.new-todo-container > input::placeholder {
+	color: whitesmoke;
+	opacity: 0.5;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
 }
