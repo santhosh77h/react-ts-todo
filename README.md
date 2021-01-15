@@ -1,5 +1,8 @@
-# Getting Started with Create React App
+### Working Example Image
+![alt text](https://raw.githubusercontent.com/santhosh77h/react-ts-todo/master/images/Screenshot%202021-01-15%20at%202.11.13%20PM.png)
 
+
+# Getting Started with Create React App
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
